@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import { Greet } from './components/Greet/Greet';
+import Welcome from './components/Welcome/Welcome';
+import Message from './components/Message/Message';
+import Counter from './components/Counter/Counter';
+import EventHandler from './components/EventHandler/EventHandler';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h3>Class Component</h3>
+      <Welcome name="Aishwarya" location="Manali" />
+      <Welcome name="Satish" location="Australia" />
+      <Welcome name="Sanu" location="Paris" />
+      <Welcome name="Kalpana" location="Rajsthan" />
+
+      <hr />
+      <h3>Functional components</h3>
+      <Greet name="Aishwarya" location="Manali" >
+        Let's plan trip.
+      </Greet>
+      <Greet name="Sakshi" location="North India" />
+      <Greet name="Ankita" location="Goa" />
+
+      <hr />
+      <Message />
+
+      <hr />
+      <Counter />
+
+      <hr />
+      <EventHandler />
     </div>
   );
 }
