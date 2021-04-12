@@ -11,8 +11,12 @@ import ConditionalRendering from './components/ConditionalRendering/ConditionalR
 import ListRendering from './components/ListRendering/ListRendering';
 import Stylesheets from './components/Stylesheets/Stylesheets';
 import InlineStylesheets from './components/InlineStylesheets/InlineStylesheets';
-import './appStyles.css'
-import styles from './appStyles.module.css'
+import './appStyles.css';
+import styles from './appStyles.module.css';
+import Form from './components/Form/Form';
+import Fragments from './components/Fragments/Fragments';
+import Table from './components/Fragments/Table';
+
 function App() {
   return (
     <div className="App">
@@ -49,9 +53,19 @@ function App() {
       {/* <ListRendering /> */}
       {/* <Stylesheets primary={true}/> */}
 
-      <InlineStylesheets/>
+      {/* <InlineStylesheets/>
       <h3 className="error">Error</h3>
-      <h3 className={styles.success}>Success</h3>
+      <h3 className={styles.success}>Success</h3> */}
+      
+      {/* <hr/>
+      <Form /> */}
+      
+      {/* <Fragments/>
+      <hr/> */}
+
+      <Table />
+      <hr/>
+
     </div>
   );
 }
