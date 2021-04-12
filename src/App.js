@@ -4,11 +4,19 @@ import Welcome from './components/Welcome/Welcome';
 import Message from './components/Message/Message';
 import Counter from './components/Counter/Counter';
 import EventHandler from './components/EventHandler/EventHandler';
+import ClassClick from './components/ClassClick/ClassClick';
+import EventBind from './components/EventBind/EventBind';
+import ParentComponent from './components/ParentComponent/ParentComponent';
+import ConditionalRendering from './components/ConditionalRendering/ConditionalRendering';
+import ListRendering from './components/ListRendering/ListRendering';
+import Stylesheets from './components/Stylesheets/Stylesheets';
 
 function App() {
   return (
     <div className="App">
-      <h3>Class Component</h3>
+      {/* <ParentComponent/> */}
+      {/* <ConditionalRendering /> */}
+      {/* <h3>Class Component</h3>
       <Welcome name="Aishwarya" location="Manali" />
       <Welcome name="Satish" location="Australia" />
       <Welcome name="Sanu" location="Paris" />
@@ -30,6 +38,14 @@ function App() {
 
       <hr />
       <EventHandler />
+
+      <hr/>
+      <ClassClick/> */}
+
+      {/* <hr/>
+      <EventBind /> */}
+      {/* <ListRendering /> */}
+      <Stylesheets primary={true}/>
     </div>
   );
 }

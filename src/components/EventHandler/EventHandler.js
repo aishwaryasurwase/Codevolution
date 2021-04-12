@@ -6,7 +6,7 @@ function EventHandler() {
     }
     return (
         <div>
-            <h3>Event Handler</h3>
+            <h3>Functional Event Handler</h3>
             <button onClick={buttonClick}>Click Event</button>
         </div>
     )
