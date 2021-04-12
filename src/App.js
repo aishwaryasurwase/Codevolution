@@ -10,7 +10,9 @@ import ParentComponent from './components/ParentComponent/ParentComponent';
 import ConditionalRendering from './components/ConditionalRendering/ConditionalRendering';
 import ListRendering from './components/ListRendering/ListRendering';
 import Stylesheets from './components/Stylesheets/Stylesheets';
-
+import InlineStylesheets from './components/InlineStylesheets/InlineStylesheets';
+import './appStyles.css'
+import styles from './appStyles.module.css'
 function App() {
   return (
     <div className="App">
@@ -45,7 +47,11 @@ function App() {
       {/* <hr/>
       <EventBind /> */}
       {/* <ListRendering /> */}
-      <Stylesheets primary={true}/>
+      {/* <Stylesheets primary={true}/> */}
+
+      <InlineStylesheets/>
+      <h3 className="error">Error</h3>
+      <h3 className={styles.success}>Success</h3>
     </div>
   );
 }
