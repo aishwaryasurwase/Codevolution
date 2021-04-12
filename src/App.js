@@ -6,7 +6,7 @@ import Counter from './components/Counter/Counter';
 import EventHandler from './components/EventHandler/EventHandler';
 import ClassClick from './components/ClassClick/ClassClick';
 import EventBind from './components/EventBind/EventBind';
-import ParentComponent from './components/ParentComponent/ParentComponent';
+// import ParentComponent from './components/ParentComponent/ParentComponent';
 import ConditionalRendering from './components/ConditionalRendering/ConditionalRendering';
 import ListRendering from './components/ListRendering/ListRendering';
 import Stylesheets from './components/Stylesheets/Stylesheets';
@@ -16,6 +16,7 @@ import styles from './appStyles.module.css';
 import Form from './components/Form/Form';
 import Fragments from './components/Fragments/Fragments';
 import Table from './components/Fragments/Table';
+import ParentComponent from './components/PureComponent/ParentComponent';
 
 function App() {
   return (
@@ -63,9 +64,10 @@ function App() {
       {/* <Fragments/>
       <hr/> */}
 
-      <Table />
-      <hr/>
+      {/* <Table />
+      <hr/> */}
 
+      <ParentComponent />
     </div>
   );
 }
