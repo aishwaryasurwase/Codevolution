@@ -17,6 +17,10 @@ import Form from './components/Form/Form';
 import Fragments from './components/Fragments/Fragments';
 import Table from './components/Fragments/Table';
 import ParentComponent from './components/PureComponent/ParentComponent';
+import RefsComponent from './components/Refs/RefsComponent';
+import ForwardParentInput from './components/ForwardRefInput/ForwardParentInput';
+import PortalComponent from './components/Portal/PortalComponent';
+import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
 
 function App() {
   return (
@@ -24,7 +28,7 @@ function App() {
       {/* <ParentComponent/> */}
       {/* <ConditionalRendering /> */}
       {/* <h3>Class Component</h3>
-      <Welcome name="Aishwarya" location="Manali" />
+      <Welcome name="Aishwarya" location="Manali" />  
       <Welcome name="Satish" location="Australia" />
       <Welcome name="Sanu" location="Paris" />
       <Welcome name="Kalpana" location="Rajsthan" />
@@ -57,17 +61,24 @@ function App() {
       {/* <InlineStylesheets/>
       <h3 className="error">Error</h3>
       <h3 className={styles.success}>Success</h3> */}
-      
+
       {/* <hr/>
       <Form /> */}
-      
+
       {/* <Fragments/>
       <hr/> */}
 
       {/* <Table />
       <hr/> */}
 
-      <ParentComponent />
+      {/* <ParentComponent /> */}
+      {/* <RefsComponent /> */}
+      {/* 
+      <ForwardParentInput />
+      <hr/> */}
+      {/* <PortalComponent /> */}
+      <ErrorBoundary heroname="Batman" />
+      <ErrorBoundary heroname="Joker" />
     </div>
   );
 }
